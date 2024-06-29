@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lima</title>
+    <!-- Incluindo jQuery a partir de uma CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#barra").click(function () {
+                $("#painel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        /* Estilos globais */
+        body {
+            background-color: #ffffff;
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Alinhamento central global */
+            color: #8B1A1A; /* Cor padrão para textos */
+        }
+
+        /* Estilos para o cabeçalho SVG */
+        svg {
+            width: 100%;
+            height: 150px;
+        }
+
+        text {
+            font-size: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Estilos para o menu */
+        .menu {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 14px;
+        }
+
+        .menu a:hover {
+            color: red;
+        }
+
+        /* Estilos para o painel expansível */
+        #barra,
+        #painel {
+            padding: 10px;
+            text-align: center;
+            background-color: #EE3B3B;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+        }
+
+        #painel {
+            display: none;
+            padding: 20px;
+            font-size: 16px;
+            color: black;
+        }
+
+        /* Estilos para o conteúdo principal */
+        .conteudo {
+            background-color: #CD5C5C;
+            color: black;
+            padding: 20px;
+            text-align: justify; /* Ajuste para justificar o texto */
+        }
+
+        .conteudo h2 {
+            font-size: 24px;
+            color: #8B1A1A;
+            margin-bottom: 10px;
+            text-align: center; /* Alinhamento central para títulos */
+        }
+
+        .conteudo p {
+            font-size: 16px;
+        }
+
+        /* Estilos para as caixas de imagens */
+        .caixas {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1700px; /* Ajuste conforme necessário */
+            margin: 0 auto;
+        }
+
+        .caixa {
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            padding: 15px;
+            width: 29.5%;
+        }
+
+        .caixa h2 {
+            font-size: 18px;
+            color: #8B1A1A;
+            margin-bottom: 10px;
+        }
+
+        .caixa p {
+            font-size: 14px;
+            color: #8B1A1A;
+        }
+
+        .caixa img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para o rodapé */
+        #footer {
+            clear: both;
+            padding: 10px;
+            background-color: #f0f0f0;
+            text-align: center;
+            color: #333333;
+        }
+
+        #footer p {
+            font-size: 12px;
+            margin: 0;
+            color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <nav> |
+            <a href="index.html">HOME</a> |
+            <a href="https://pt.wikipedia.org" target="_blank">WIKIPEDIA</a> |
+            <a href="http://www.cesumar.br" target="_blank">UNICESUMAR</a>
+        </nav>
+    </div>
+
+    <!-- Cabeçalho -->
+    <svg>
+        <rect width="100%" height="100" style="fill:rgb(100,0,0);" />
+        <text fill="#ffffff" font-size="30" font-family="Times New Roman" x="50" y="40">LIMA - PERU</text>
+        <text fill="#ffffff" font-size="20" font-family="Times New Roman" x="50" y="80">Quase 9 Milhões de Habitantes em
+            Seu Entorno</text>
+    </svg>
+
+    <!-- Painel expansível -->
+    <div id="barra"><strong>História da Atual Capital Peruana</strong></div>
+    <div id="painel">Fundada em 1535 e chamada de Cidade dos Reis, em território formado por vales de rios.<br />Por ter
+        sido fundada em território indígena, foi sitiada em 1536, mas foram derrotados pelos espanhóis unidos a
+        indígenas aliados.<br />Alvo de piratas, muralhas foram construídas nos anos 1680, e abalos sísmicos também já
+        causaram grandes estragos à cidade.</div>
+
+    <!-- Conteúdo principal -->
+    <div class="conteudo">
+        <h2>Lima - Turismo</h2>
+        <p>Lima é uma metrópole com uma história e geografia peculiar. Além de suas atrações como sítios arqueológicos,
+            praças, parques e uma culinária fantástica, Lima serve como ponto de partida para uma viagem por diversos
+            destinos no Peru. Fazer um city tour é sempre uma boa opção para ter uma visão geral da cidade e conhecer
+            seus principais pontos turísticos. Locais como a Plaza de Armas, a Catedral e o Parque del Amor são
+            imperdíveis. Lima tem quase 9 milhões de habitantes e como toda grande cidade tem muitas opções de
+            restaurantes, bares, boates, shoppings. Um local muito agradável é o Larcomar, um shopping a céu aberto com
+            vista para o Oceano Pacífico. Esse é um dos atrativos do Peru. Lima é chamada por alguns de capital
+            gastronômica da América. Lá há muitos restaurantes com os mais variados pratos. Os pratos típicos de lá são
+            muito saborosos, coloridos e custam pouco.</p>
+    </div>
+
+    <!-- Caixas de imagens -->
+    <div class="caixas">
+        <div class="caixa">
+            <h2>Paisagem Costeira</h2>
+            <img src="imagens/Lima01.jpg" width="100%" alt="Paisagem Costeira">
+        </div>
+        <div class="caixa">
+            <h2>Catedral Principal</h2>
+            <img src="imagens/Lima02.jpg" width="100%" alt="Catedral Principal">
+        </div>
+        <div class="caixa">
+            <h2>Visão Noturna</h2>
+            <img src="imagens/Lima03.jpg" width="100%" alt="Visão Noturna">
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="footer">
+        <p>Fonte: <a href="http://www.melhoresdestinos.com.br/lima-peru.html" target="_blank">Melhores Destinos</a>.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bogotá</title>
+    <!-- Incluir jQuery a partir de uma CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#barra").click(function () {
+                $("#painel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        /* Estilos globais */
+        body {
+            background-color: #ffffff;
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Alinhamento central global */
+            color: #FFA500;
+        }
+
+        /* Estilos para o cabeçalho SVG */
+        svg {
+            width: 100%;
+            height: 150px;
+        }
+
+        text {
+            font-size: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Estilos para o menu */
+        .menu {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 14px;
+        }
+
+        .menu a:hover {
+            color: orange;
+        }
+
+        /* Estilos para o painel expansível */
+        #barra,
+        #painel {
+            padding: 10px;
+            text-align: center;
+            background-color: #FFA500;
+            font-size: 20px;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        #painel {
+            display: none;
+            padding: 20px;
+            font-size: 16px;
+            color: black;
+        }
+
+        /* Estilos para o conteúdo principal */
+        .conteudo {
+            background-color: #B22222;
+            color: #ffffff;
+            padding: 20px;
+            text-align: justify; /* Ajuste para justificar o texto */
+        }
+
+        .conteudo h2 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align: center; /* Alinhamento central para títulos */
+        }
+
+        .conteudo p {
+            font-size: 16px;
+        }
+
+        /* Estilos para as caixas de imagens */
+        .caixas {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px; /* Ajuste conforme necessário */
+            margin: 0 auto;
+        }
+
+        .caixa {
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            padding: 15px;
+            width: 29.5%;
+        }
+
+        .caixa h2 {
+            font-size: 18px;
+            color: #FFA500;
+            margin-bottom: 10px;
+        }
+
+        .caixa p {
+            font-size: 14px;
+            color: #FFA500;
+        }
+
+        .caixa img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para o rodapé */
+        #footer {
+            clear: both;
+            padding: 10px;
+            background-color: #f0f0f0;
+            text-align: center;
+            color: #333333;
+        }
+
+        #footer p {
+            font-size: 12px;
+            margin: 0;
+            color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <nav> |
+            <a href="index.html">HOME</a> |
+            <a href="https://pt.wikipedia.org" target="_blank">WIKIPEDIA</a> |
+            <a href="http://www.cesumar.br" target="_blank">UNICESUMAR</a>
+        </nav>
+    </div>
+
+    <!-- Cabeçalho -->
+    <svg>
+        <rect width="100%" height="100" style="fill:rgb(255,255,0);" />
+        <text fill="#FFA500" font-size="30" font-family="Times New Roman" x="50" y="40">BOGOTÁ - COLÔMBIA</text>
+        <text fill="#FFA500" font-size="20" font-family="Times New Roman" x="50" y="80">Quase de 7 Milhões de Habitantes
+            em Seu Entorno</text>
+    </svg>
+
+    <!-- Painel expansível -->
+    <div id="barra"><strong>História da Capital Colombiana</strong></div>
+    <div id="painel">Através da história, Bogotá foi conhecida por diferentes nomes. O nome original era "Thybzacá" ou
+        "Teusacá" para depois se chamar Teusaquillo.<br /> Em 1538, o conquistador Gonzalo Jiménez de Quesada fundou a
+        cidade, como Nuestra Señora de la Esperanza (Nossa Senhora da Esperança). Em 1539, o nome foi alterado para
+        Santafé.<br /> A constituição de 1991 mudou o nome da capital para Santafé de Bogotá. Em 2000, uma reforma
+        constitucional alterou o nome para Bogotá apenas.
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="conteudo">
+        <h2>Bogotá - Turismo</h2>
+        <p>Os pontos turísticos importantes em Bogotá são o "Jardim Botânico José Celestino Mutis", a "Quinta de
+            Bolívar", o "Observatório Astronômico Nacional", o "Planetário de Bogotá", o "Maloka" (parque temático sobre
+            ciência e tecnologia), o "Mirador Metropolitano da Torre Colpatria", o "Mirador de La Calera", o "Monumento
+            de Banderas a las Américas" (ao lado da estação banderas do TransMilenio) e La Candelaria, localidade que é
+            patrimônio e Bem de Interesse Cultural de Caráter Nacional. Além disso, a cidade conta com numerosos parques
+            de atrações mecânicas como: "Salitre Mágico", "Mundo Aventura" e "Camelot".</p>
+    </div>
+
+    <!-- Caixas de imagens -->
+    <div class="caixas">
+        <div class="caixa">
+            <h2>La Santa Maria</h2>
+            <img src="imagens/Bogota01.jpg" alt="La Santa Maria" width="100%">
+        </div>
+        <div class="caixa">
+            <h2>Catedral Principal de Bogotá</h2>
+            <img src="imagens/Bogota02.jpg" alt="Catedral Principal de Bogotá" width="100%">
+        </div>
+        <div class="caixa">
+            <h2>Vista Aérea de Bogotá</h2>
+            <img src="imagens/Bogota03.jpg" alt="Vista Aerea Bogotá" width="100%">
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="footer">
+        <p>Fonte: http://www.melhoresdestinos.com.br/lima-peru.html.</p>
+    </div>
+</body>
+
+</html>

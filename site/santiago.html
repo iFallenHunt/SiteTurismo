@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Santiago</title>
+    <!-- Incluindo jQuery a partir de uma CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#barra").click(function(){
+                $("#painel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        /* Estilos globais */
+        body {
+            background-color: #ffffff;
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+
+        /* Estilos para o cabeçalho */
+        svg {
+            width: 100%;
+            height: 150px;
+        }
+
+        text {
+            font-size: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Estilos para o menu */
+        .menu {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .menu a:hover {
+            color: #FF0000;
+        }
+
+        /* Estilos para o painel expansível */
+        #barra, #painel {
+            padding: 10px;
+            text-align: center;
+            background-color: #4682B4;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+        }
+
+        #painel {
+            display: none;
+            padding: 20px;
+            font-size: 16px;
+            color: black;
+        }
+
+        /* Estilos para o conteúdo principal */
+        .conteudo {
+            background-color: #B22222;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            text-align: justify;
+        }
+
+        .conteudo h2 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .conteudo p {
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        /* Estilos para as caixas de imagens */
+        .caixas {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1700px; /* Ajuste conforme necessário */
+            margin: 0 auto;
+        }
+
+        .caixa {
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            padding: 15px;
+            width: 29.5%;
+        }
+
+        .caixa h2 {
+            text-align: center;
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 10px;            
+        }
+
+        .caixa p {
+            font-size: 14px;
+            color: #0000CD;
+            
+        }
+
+        .caixa img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para o rodapé */
+        #footer {
+            clear: both;
+            padding: 10px;
+            background-color: #f0f0f0;
+            text-align: center;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <nav> |
+            <a href="index.html">HOME</a> |
+            <a href="https://pt.wikipedia.org" target="_blank">WIKIPEDIA</a> |
+            <a href="http://www.cesumar.br" target="_blank">UNICESUMAR</a>
+        </nav>
+    </div>
+
+    <!-- Cabeçalho -->
+    <svg>
+        <rect width="100%" height="100" style="fill:#000096;" />
+        <text fill="#ffffff" x="50" y="40">SANTIAGO - CHILE</text>
+        <text fill="#ffffff" x="50" y="80">Mais de 6 Milhões de Habitantes em Seu Entorno</text>
+    </svg>
+
+    <!-- Painel expansível -->
+    <div id="barra"><strong>História da Capital Chilena</strong></div>
+    <div id="painel">Fundada pelo conquistador espanhol Pedro de Valdivia em fevereiro de 1541 sob o nome de Santiago de Nueva Extremadura, santo patrono da Espanha.<br />Na Guerra do Arauco, a cidade foi destruída por nativos liderados por Michimalonco em setembro do mesmo ano.<br />Dificuldades com relação à água e estando cercada pela cordilheira, começou a se desenvolver na década de 1880 após a criação de uma estrada que facilitou o acesso e expansão da cidade.</div>
+
+    <!-- Conteúdo principal -->
+    <div class="conteudo">
+        <h2>Santiago - Turismo</h2>
+        <p>A cidade é um importante destino turístico a nível nacional, por ser a principal porta de entrada ao país através do Aeroporto Internacional Comodoro Arturo Merino Benítez e do Paso Transandino Internacional Los Libertadores. Ambos concentram 55,2% do total de pessoas que ingressam no Chile por ano, o equivalente a 1 119 840 de turistas em 2005. Segundo um estudo do Serviço Nacional de Turismo, 52,3% dos turistas (tanto nacionais como internacionais) têm como destino a categoria “Santiago e seus arredores”, sendo que quase toda esta parcela também visita as estações de esqui localizadas na Cordilheira dos Andes. Com vários atrativos históricos e culturais, museus, palácios, mirantes, shows, vida noturna intensa, compras, entre outros, se tornou, principalmente após o “boom” econômico da década de 1990, uma grande opção turística. Além disso, se encontra a menos de 100 km do litoral e de estâncias de esqui (entre elas, a mais moderna da América do Sul). Provenientes de todas as partes do mundo, os turistas que conhecem a cidade são principalmente europeus, estadunidenses, canadenses e brasileiros.</p>
+    </div>
+
+    <!-- Caixas de imagens -->
+    <div class="caixas">
+        <div class="caixa">
+            <h2>Praça de Armas</h2>
+            <img src="imagens/Santiago01.jpg" alt="Praça de Armas">
+        </div>
+        <div class="caixa">
+            <h2>Santiago e a Cordilheira</h2>
+            <img src="imagens/Santiago02.jpg" alt="Santiago e a Cordilheira">
+        </div>
+        <div class="caixa">
+            <h2>Vale Nevado</h2>
+            <img src="imagens/Santiago03.jpg" alt="Vale Nevado">
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="footer">
+        <p>Fonte: Wikipedia, a enciclopédia livre.</p>
+    </div>
+</body>
+</html>

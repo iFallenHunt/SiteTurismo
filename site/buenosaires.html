@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buenos Aires</title>
+    <!-- Incluir jQuery a partir de uma CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#barra").click(function () {
+                $("#painel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center; /* Alinha todo o conteúdo ao centro */
+        }
+
+        /* Estilos para o menu */
+        .menu {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .menu a:hover {
+            color: #008000;
+        }
+
+        /* Estilos para o cabeçalho */
+        #barra,
+        #painel {
+            padding: 10px;
+            text-align: center;
+            background-color: #1E90FF;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+        }
+
+        #painel {
+            display: none;
+            padding: 20px;
+            font-size: 16px;
+            color: black;
+        }
+
+        /* Estilos para o conteúdo principal */
+        .conteudo {
+            background-color: #87CEEB;
+            color: black;
+            padding: 20px;
+            margin: 20px;
+            text-align: justify;
+        }
+
+        .conteudo h2 {
+            font-size: 20px;
+            color: #000080;
+            text-align: center; /* Alinha título ao centro */
+        }
+
+        .conteudo p {
+            font-size: 14px;
+            color: #000080;
+            text-align: justify; /* Justifica texto */
+        }
+
+        /* Estilos para as caixas de imagens */
+        .caixas {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1700px; /* Ajuste conforme necessário */
+            margin: 0 auto;
+        }
+
+        .caixa {
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            padding: 15px;
+            width: 29.5%;
+        }
+
+        .caixa h2 {
+            font-size: 18px;
+            color: #000080;
+            margin-bottom: 10px;
+            text-align: center; /* Alinha título ao centro */
+        }
+
+        .caixa p {
+            font-size: 14px;
+            color: #000080;
+            text-align: justify; /* Justifica texto */
+        }
+
+        .caixa img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para o rodapé */
+        .footer {
+            clear: both;
+            padding: 10px;
+            background-color: #f0f0f0;
+            text-align: center;
+            color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <nav> |
+            <a href="index.html">HOME</a> |
+            <a href="https://pt.wikipedia.org" target="_blank">WIKIPEDIA</a> |
+            <a href="http://www.cesumar.br" target="_blank">UNICESUMAR</a>
+        </nav>
+    </div>
+
+    <!-- Cabeçalho -->
+    <svg width="100%" height="100">
+        <rect width="100%" height="100" style="fill:#000064;" />
+        <text fill="#ffffff" font-size="30" font-family="Times New Roman" x="50" y="40">BUENOS AIRES - ARGENTINA</text>
+        <text fill="#ffffff" font-size="20" font-family="Times New Roman" x="50" y="80">Cerca de 3 Milhões de Habitantes
+            em Seu Entorno</text>
+    </svg>
+
+    <!-- Painel expansível -->
+    <div id="barra"><strong>História da Atual Capital Argentina</strong></div>
+    <div id="painel">Pedro de Mendoza fundou a cidade em 1536 chamando-a de Nuestra Señora del Buen Ayre.<br />Foi
+        arrasada por índios, e em 1580 refundada por Juan de Garay com o nome de Ciudad de la Santísima Trinidad y
+        Puerto de Nuestra Señora del Buen Ayre.<br />Começou seu crescimento somente após 1776 quando se tornou capital
+        do vice-reino do Rio-da-Prata.</div>
+
+    <!-- Conteúdo principal -->
+    <div class="conteudo">
+        <h2>Buenos Aires</h2>
+        <p>A cidade conta com o Aeroporto Internacional de Ezeiza (situado a 35 quilômetros da cidade) e com um
+            aeroporto doméstico, o Aeroparque Jorge Newbery. É servida pelo terminal rodoviário de Retiro, de onde
+            partem e chegam linhas de ônibus (autocarros) para todas as regiões do país e para cidades do Chile, Peru,
+            Bolívia, Paraguai, Uruguai e Brasil. Conta ainda com ferry-boats que a conectam com as cidades de Colônia do
+            Sacramento e Montevidéu, no vizinho Uruguai. Fica a 1630 quilômetros ao norte de outro importante destino
+            turístico argentino, a cidade de Bariloche. Os shows de tango são um dos principais atrativos da cidade, até
+            porque constituem uma das características mais afamadas da cultura argentina. São muitas as casas de
+            espetáculos que apresentam shows variados de dança e música, muito procurados por quem faz turismo na
+            cidade.</p>
+    </div>
+
+    <!-- Caixas de imagens -->
+    <div class="caixas">
+        <div class="caixa">
+            <h2>La Boca</h2>
+            <img src="imagens/Buenosaires01.jpg" alt="La Boca">
+            <p>Texto descritivo sobre La Boca.</p>
+        </div>
+        <div class="caixa">
+            <h2>La Bombonera</h2>
+            <img src="imagens/Buenosaires02.jpg" alt="La Bombonera">
+            <p>Texto descritivo sobre La Bombonera.</p>
+        </div>
+        <div class="caixa">
+            <h2>Casa Rosada</h2>
+            <img src="imagens/Buenosaires03.jpg" alt="Casa Rosada">
+            <p>Texto descritivo sobre Casa Rosada.</p>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        <p>Fonte: Wikipedia, a enciclopédia livre.</p>
+    </div>
+</body>
+
+</html>
