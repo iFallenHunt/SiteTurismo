@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Buenos Aires</title>
-    <!-- Incluir jQuery a partir de uma CDN -->
-    <script src="jquery-3.7.1.js"></script>
+    <title>Montevideo</title>
+    <!-- Incluindo jQuery a partir de uma CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
             $("#barra").click(function () {
@@ -21,7 +21,6 @@
             padding: 0;
             background-color: #ffffff;
             color: #000000;
-            text-align: center; /* Alinha todo o conteúdo ao centro */
         }
 
         /* Estilos para o menu */
@@ -43,11 +42,10 @@
         }
 
         /* Estilos para o cabeçalho */
-        #barra,
-        #painel {
+        #barra, #painel {
             padding: 10px;
             text-align: center;
-            background-color: #1E90FF;
+            background-color: #2E8B57;
             font-size: 20px;
             cursor: pointer;
             color: white;
@@ -62,8 +60,8 @@
 
         /* Estilos para o conteúdo principal */
         .conteudo {
-            background-color: #87CEEB;
-            color: black;
+            background-color: #2E8B57;
+            color: white;
             padding: 20px;
             margin: 20px;
             text-align: justify;
@@ -71,14 +69,14 @@
 
         .conteudo h2 {
             font-size: 20px;
-            color: #000080;
-            text-align: center; /* Alinha título ao centro */
+            color: white;
+            text-align: center;
         }
 
         .conteudo p {
             font-size: 14px;
-            color: #000080;
-            text-align: justify; /* Justifica texto */
+            color: white;
+            text-align: center;
         }
 
         /* Estilos para as caixas de imagens */
@@ -101,15 +99,15 @@
 
         .caixa h2 {
             font-size: 18px;
-            color: #000080;
+            color: #2E8B57;
             margin-bottom: 10px;
-            text-align: center; /* Alinha título ao centro */
+            text-align: center;
         }
 
         .caixa p {
             font-size: 14px;
-            color: #000080;
-            text-align: justify; /* Justifica texto */
+            color: #2E8B57;
+            text-align: justify;
         }
 
         .caixa img {
@@ -141,49 +139,46 @@
 
     <!-- Cabeçalho -->
     <svg width="100%" height="100">
-        <rect width="100%" height="100" style="fill:#000064;" />
-        <text fill="#ffffff" font-size="30" font-family="Times New Roman" x="50" y="40">BUENOS AIRES - ARGENTINA</text>
-        <text fill="#ffffff" font-size="20" font-family="Times New Roman" x="50" y="80">Cerca de 3 Milhões de Habitantes
-            em Seu Entorno</text>
+        <rect width="100%" height="100" style="fill:#2E8B57;" />
+        <text fill="#ffffff" font-size="30" font-family="Times New Roman" x="50" y="40">MONTEVIDEO - URUGUAI</text>
+        <text fill="#ffffff" font-size="20" font-family="Times New Roman" x="50" y="80">Mais de 1 Milhão de Habitantes
+            em Sua Região Metropolitana</text>
     </svg>
 
     <!-- Painel expansível -->
-    <div id="barra"><strong>História da Atual Capital Argentina</strong></div>
-    <div id="painel">Pedro de Mendoza fundou a cidade em 1536 chamando-a de Nuestra Señora del Buen Ayre.<br />Foi
-        arrasada por índios, e em 1580 refundada por Juan de Garay com o nome de Ciudad de la Santísima Trinidad y
-        Puerto de Nuestra Señora del Buen Ayre.<br />Começou seu crescimento somente após 1776 quando se tornou capital
-        do vice-reino do Rio-da-Prata.</div>
+    <div id="barra"><strong>História da Capital Uruguaia</strong></div>
+    <div id="painel">Fundada em 1726 por Bruno Mauricio de Zabala com o nome de San Felipe y Santiago de Montevideo,
+        teve um papel crucial na defesa contra invasões estrangeiras e na luta pela independência do
+        Uruguai.<br />Montevideo é conhecida por sua arquitetura colonial, praias como Punta Carretas e Pocitos, e pelo
+        Rambla, um passeio à beira-mar que se estende por 13,7 km.</div>
 
     <!-- Conteúdo principal -->
     <div class="conteudo">
-        <h2>Buenos Aires</h2>
-        <p>A cidade conta com o Aeroporto Internacional de Ezeiza (situado a 35 quilômetros da cidade) e com um
-            aeroporto doméstico, o Aeroparque Jorge Newbery. É servida pelo terminal rodoviário de Retiro, de onde
-            partem e chegam linhas de ônibus (autocarros) para todas as regiões do país e para cidades do Chile, Peru,
-            Bolívia, Paraguai, Uruguai e Brasil. Conta ainda com ferry-boats que a conectam com as cidades de Colônia do
-            Sacramento e Montevidéu, no vizinho Uruguai. Fica a 1630 quilômetros ao norte de outro importante destino
-            turístico argentino, a cidade de Bariloche. Os shows de tango são um dos principais atrativos da cidade, até
-            porque constituem uma das características mais afamadas da cultura argentina. São muitas as casas de
-            espetáculos que apresentam shows variados de dança e música, muito procurados por quem faz turismo na
-            cidade.</p>
+        <h2>Montevideo - Turismo</h2>
+        <p>Montevideo atrai visitantes com sua rica cultura, gastronomia variada e sua tranquila atmosfera urbana.
+            Pontos turísticos incluem o Teatro Solís, a Plaza Independencia, o Mercado del Puerto, e a Ciudad Vieja, o
+            centro histórico da cidade.</p>
     </div>
 
     <!-- Caixas de imagens -->
     <div class="caixas">
         <div class="caixa">
-            <h2>La Boca</h2>
-            <img src="imagens/Buenosaires01.jpg" alt="La Boca">
-            <p>Texto descritivo sobre La Boca.</p>
+            <h2>Teatro Solís</h2>
+            <img src="imagens/Montevideo01.jpg" alt="Teatro Solís">
+            <p>O Teatro Solís é o principal teatro de ópera e balé de Montevideo, inaugurado em 1856 e localizado no
+                coração da cidade.</p>
         </div>
         <div class="caixa">
-            <h2>La Bombonera</h2>
-            <img src="imagens/Buenosaires02.jpg" alt="La Bombonera">
-            <p>Texto descritivo sobre La Bombonera.</p>
+            <h2>Rambla de Montevideo</h2>
+            <img src="imagens/Montevideo02.jpg" alt="Rambla de Montevideo">
+            <p>A Rambla de Montevideo é um dos maiores passeios à beira-mar do mundo, oferecendo vistas deslumbrantes do
+                Rio da Prata.</p>
         </div>
         <div class="caixa">
-            <h2>Casa Rosada</h2>
-            <img src="imagens/Buenosaires03.jpg" alt="Casa Rosada">
-            <p>Texto descritivo sobre Casa Rosada.</p>
+            <h2>Pocitos</h2>
+            <img src="imagens/Montevideo03.jpg" alt="Pocitos">
+            <p>Pocitos é um bairro residencial de Montevideo conhecido por suas praias tranquilas e atmosfera
+                descontraída.</p>
         </div>
     </div>
 
