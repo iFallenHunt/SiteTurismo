@@ -42,4 +42,4 @@ https://ifallenhunt.github.io/WebsiteTourism/
 
 #### License
 
-This project is licensed under the [MIT License]().
+This project is licensed under the [MIT License](https://github.com/iFallenHunt/WebsiteTourism/blob/main/LICENSE).
